@@ -1,0 +1,145 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+main{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.271);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box{
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        // border: 1px solid black;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(42, 42, 42, 0.414);
+        >section{
+            width: 50%;
+            // border: 1px solid black;
+            position: relative;
+            background-color: rgba(255, 166, 0, 0.811);
+            >#steps{
+                width: 100%;
+                height: 10%;
+                // border: 1px solid blue;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                >span{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+                    margin: 5px;
+                    position: relative;
+                    cursor: pointer;
+                    >span{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        transform: scale(0);
+                        background-color: rgb(247, 81, 21);
+                        transform-origin: 50%  50%;
+                        border-radius: 50%;
+                        transition: 1s;
+                    }
+                }
+            }
+            >figure{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: 1s;
+                >img{
+                    width: 80%;
+                    height: 70%;
+                    object-fit: cover;
+                    // border: 1px solid red;
+                }
+                >figcaption{
+                    // border: 1px solid red;
+                    margin-top: -100px;
+                    text-align: center;
+                    line-height: 22px;
+                    padding: 5px;
+                }
+            }
+        }
+        >#formvalid{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            // border: 1px solid red;
+            // padding: 24px;
+            >input{
+                text-indent: 5px;
+                width: 60%;
+                height: 35px;
+                &:focus{
+                    outline:none;
+                    border: 2px solid rgb(255, 149, 0);
+                }
+            }
+            >span{
+                width: 60%;
+                // border: 1px solid red;
+                margin-bottom: 5px;
+                font-size: 13px;
+                color: red;
+            }
+            >label{
+                width: 60%;
+                text-align: left;
+                text-transform:capitalize;
+                margin-bottom: 5px;
+
+                // border: 1px solid red;
+            }
+            >button{
+                width: 60%;
+                height: 40px;
+                cursor: pointer;
+                margin-top: 5px;
+                background-color:rgb(255, 149, 0) ;
+                border: none;
+                border-radius: 6px;
+                color: white;
+                transition: .4s;
+                margin-top: 10px;
+                &:hover{
+                    background-color:rgb(247, 81, 21) ;
+                }
+                >a{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            >#fname{
+            }
+        }
+    }
+}

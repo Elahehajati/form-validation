@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="box">
+        <form id="formvalid" onsubmit="return formvalidation()" action="login/login.html">
+            <label for="fname" name="fn">first name</label>
+            <input type="text" name ='ssss' id="fname" placeholder="First Name" autocomplete="off">
+            <span class="eror"> </span>
+            <label for="lname">last name</label>
+            <input type="text" id="lname" placeholder="Last Name" autocomplete="off">
+            <span class="eror"></span>
+            <label for="email">email</label>
+            <input type="text" id="email" placeholder="mail" autocomplete="off">
+            <span class="eror"></span>
+            <label for="tell">Phone</label>
+            <input type="text" id="tell" placeholder="Phone" autocomplete="off">
+            <span class="eror"></span>
+            <label for="Password" name="ps">Password</label>
+            <input type="text" id="password" name="ssss" placeholder="Password" autocomplete="off">
+            <span class="eror"></span>
+            <label for="Confirm Passwor">Confirm Password</label>
+            <input type="text" id="Confirm Password" placeholder="Confirm Passwor" autocomplete="off">
+            <span class="eror"></span>
+            <button><a id="go">submit</a></button>
+        </form>
+        <section>
+            <figure>
+                <img src="img/1.png" alt="">
+                <figcaption>“A goal without a plan is just a wish.” <br>Antoine de Saint-Exupéry, writer and pioneering aviator</figcaption>
+            </figure>
+            <figure>
+                <img src="img/2.png" alt="">
+                <figcaption>“Plans are of little importance, but planning is essential.”<br> Winston Churchill, former British Prime Minister </figcaption>
+            </figure>
+            <figure>
+                <img src="img/3.png" alt="">
+                <figcaption>“Planning is bringing the future into the present so that you can do something about it now.” <br> Alan Lakein, author </figcaption>
+            </figure>
+            <figure>
+                <img src="img/4.png" alt="">
+                <figcaption>“Every minute you spend in planning saves 10 minutes in execution; this gives you a 1,000 percent return on energy!” <br> Brian Tracy, author and motivational speaker </figcaption>
+            </figure>
+            <section id="steps">
+                <span data-status='0' onclick="sliderclick(this)"><span></span></span>
+                <span data-status='1' onclick="sliderclick(this)"><span></span></span>
+                <span data-status='2' onclick="sliderclick(this)"><span></span></span>
+                <span data-status='3' onclick="sliderclick(this)"><span></span></span>
+            </section>
+        </section>    
+    </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
